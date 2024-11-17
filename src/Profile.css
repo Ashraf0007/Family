@@ -1,0 +1,115 @@
+/* src/Profile.css */
+.profile-container {
+  max-width: 400px;
+  margin: 20px auto; /* Adds space from the top, including header */
+  padding: 20px; /* Adds padding inside the form */
+  background-color: #fff; /* Matches background color with transaction form */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem; /* Increased margin for better spacing */
+  color: var(--primary-color);
+}
+
+.profile-container label {
+  display: block;
+  font-weight: bold;
+  margin: 0.5rem 0 0.25rem;
+  color: var(--text-color);
+}
+
+.profile-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Style for buttons */
+.profile-container button {
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 10px; /* Add margin to create space between buttons */
+}
+
+.profile-container button:hover {
+  background-color: var(--button-hover-color);
+}
+
+.profile-container .error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.profile-container .message {
+  color: green;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+/* Style for the password change form (consistent with profile form) */
+.change-password-form {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff; /* Matches the profile form's background */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Matches the box shadow of the profile form */
+  border: 1px solid var(--border-color); /* Add a border to match the profile form style */
+}
+
+.change-password-form h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.change-password-form label {
+  display: block;
+  font-weight: bold;
+  margin: 0.5rem 0 0.25rem;
+  color: var(--text-color);
+}
+
+.change-password-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.change-password-form button {
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 10px; /* Add margin between buttons */
+}
+
+.change-password-form button:hover {
+  background-color: var(--button-hover-color);
+}
+
+.change-password-form .cancel-button {
+  background-color: var(--border-color); /* Neutral color for cancel button */
+  margin-top: 10px;
+}

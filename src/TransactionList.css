@@ -1,0 +1,99 @@
+/* src/TransactionList.css */
+
+/* Main container padding */
+.transaction-list-container {
+  overflow: auto; /* Prevent overflow if necessary */
+  padding: 20px;
+  text-align: center;
+}
+
+/* Styling for the transaction table */
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Table header and cell styles */
+.transaction-table th,
+.transaction-table td {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  text-align: left;
+}
+
+/* Header styling */
+.transaction-table th {
+  background-color: var(--primary-color);
+  color: white;
+  cursor: pointer;
+}
+
+/* Table header hover effect */
+.transaction-table th:hover {
+  background-color: var(--button-hover-color);
+}
+
+/* Styling for even rows in the table */
+.transaction-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Filters (search bar) container */
+.filters {
+  display: flex;
+  gap: 20px; /* Increased space between filter fields */
+  margin-bottom: 20px;
+  margin-top: 10px;
+  justify-content: space-between; /* Aligns filters evenly */
+  align-items: center; /* Vertically centers the elements */
+  text-align: left;
+}
+
+/* Label for filters */
+.filters label {
+  display: flex;
+  flex-direction: column; /* Stack label above the input fields */
+  flex: 1; /* Allow labels to grow with input width */
+  gap: 5px; /* Space between label text and input field */
+  font-weight: bold; /* Make the label text bold for better readability */
+  color: var(--text-color); /* Ensure label text color contrasts well */
+}
+
+/* Dropdown and date picker input styling */
+.filters select,
+.filters input[type="date"] {
+  width: 100%; /* Force inputs to fill the label container width */
+  padding: 8px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  margin-top: 0; /* Override any global margin */
+  margin-bottom: 0; /* Override any global margin */
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+  background-color: var(--input-bg-color); /* Soft background color */
+}
+
+/* Focus styles for select and date inputs */
+.filters select:focus,
+.filters input[type="date"]:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  background-color: var(--input-focus-bg-color); /* Highlight when focused */
+}
+
+/* Button styling (Optional: Add a reset button for date filters) */
+.filters button {
+  padding: 8px 15px;
+  background-color: var(--button-bg-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.filters button:hover {
+  background-color: var(--button-hover-color);
+}
+
+

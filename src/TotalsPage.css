@@ -1,0 +1,26 @@
+/* src/TotalsPage.css */
+
+.totals-page-container {
+    padding: 20px;
+  }
+  
+  .totals-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .totals-dropdown label {
+    font-weight: bold;
+  }
+  
+  .totals-display {
+    margin-top: 20px;
+  }
+  
+  .totals-display h3 {
+    font-size: 1.2em;
+    color: var(--primary-color);
+  }
+  

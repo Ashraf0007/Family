@@ -1,13 +1,186 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* index.css */
+
+/* Define color variables for consistency */
+:root {
+  --primary-color: #4caf50;
+  --secondary-color: #333;
+  --background-color: #f4f4f9;
+  --text-color: #333;
+  --button-hover-color: #45a049;
+  --border-color: #ccc;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Global Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--button-hover-color);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--button-hover-color);
+}
+
+.print-button {
+  right: 20px;
+  bottom: 20px;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+  align-self: flex-end; /* Align the button to the bottom */
+  width: auto; /* Button width will be auto unless otherwise specified */
+  margin-left: auto; /* Center horizontally */
+  margin-right: 0; /* Center horizontally */
+  display: block; /* Make the button block-level so it respects the margins */
+}
+
+.print-button:hover {
+  background-color: var(--button-hover-color);
+}
+
+.print-button:focus {
+  outline: none;
+}
+
+/* Ensure button appears below the table */
+.transaction-list-container > .print-button {
+  clear: both; /* Clear any floats above */
+}
+
+input,
+select,
+textarea {
+  width: auto;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+/* Shared form styles for Login and Register */
+
+/* Center the form container on the page */
+.login-container, .register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+/* Style for the form itself */
+.login-form, .register-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Form heading */
+.login-form h2, .register-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--secondary-color);
+}
+
+/* Label styling */
+.login-form label, .register-form label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--secondary-color);
+  display: block;
+}
+
+/* Input styling */
+.login-form input, .register-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Button styling */
+.login-form button, .register-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-form button:hover, .register-form button:hover {
+  background-color: var(--button-hover-color);
+}
+
+/* Link styling */
+.login-form p, .register-form p {
+  text-align: center;
+}
+
+.login-form a, .register-form a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.login-form a:hover, .register-form a:hover {
+  text-decoration: underline;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
 }

@@ -1,0 +1,111 @@
+/* register.css */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background-color);
+  }
+  
+  .register-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .register-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+  }
+  
+  .register-form label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-color);
+    display: block;
+  }
+  
+  .register-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .register-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .register-form button:hover {
+    background-color: var(--button-hover-color);
+  }
+  
+  .register-form p {
+    text-align: center;
+  }
+  
+  .register-form a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  .register-form a:hover {
+    text-decoration: underline;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .toast {
+    position: fixed;
+    top: 10%; /* Adjust position */
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 1000;
+    animation: fadeInOut 2s ease-in-out;
+  }
+  
+  .toast.success {
+    background-color: #4caf50; /* Green for success */
+    color: white;
+  }
+  
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, -20%);
+    }
+    10%,
+    90% {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -20%);
+    }
+  }
+  
