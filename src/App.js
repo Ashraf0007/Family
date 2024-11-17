@@ -31,7 +31,7 @@ function App() {
   }, []);
 
   return (
-    <Router basename="/Family/">
+    <Router basename="/Family">
       <div
         className="App"
         >
